@@ -1,5 +1,72 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--bg-color);
+    
+}
+
+.header {
+    height: 100vh;
+    min-height: 668px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content repeat(3, 1fr);
+    padding-block: 10px;
+}
+.header__decorated-indicator {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    grid-row: 1;
+    
+    
+}
+
+
+.header__rec-indicator {
+    color: var(--accent-color);
+    font-weight: var(--fw-regular);
+    position: absolute;
+    width: 33px;
+    
+    
+}
+
+.header__rec-indicator::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    right: -10px;
+    top: 6px;
+    box-shadow: 0px 0px 4px 2px var(--accent-color);
+    
+    
+    
+    
+    
+}
+
+.header__theme-menu {
+    justify-self: end;
+    align-self: center;
+}
+
+.slogan {
+    color: var(--slogan-color);
+    /* font-family: "IBM Plex mono", monospace, Monaco;
+    перенесла в глобальные стили
+     */
+    font-size: 116px;
+    font-weight: 700;
+    line-height: 83%;
+    /*  не забудь откорректировать размеры шрифта  для адаптивности!!! */
+    align-self: center;
 }
