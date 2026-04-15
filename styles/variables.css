@@ -8,7 +8,14 @@
     --slogan-color: #DB00FF;
     --shadow-color: #FF0070;
     --accent-color: #FF0070;
+<<<<<<< Updated upstream
+=======
+    --color-main-text: #F1B2CE;
+    --color-title-text: #000028;
+>>>>>>> Stashed changes
     --fw-regular: 400;
     --fw-bold: 700;
+    --fs-regular-text: 18px;
+    --lh-regular-text: 1.3;
     
 }

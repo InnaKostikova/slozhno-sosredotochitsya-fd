@@ -69,4 +69,79 @@
     line-height: 83%;
     /*  не забудь откорректировать размеры шрифта  для адаптивности!!! */
     align-self: center;
+<<<<<<< Updated upstream
+=======
+    text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title {
+    align-self: center;
+    font-size: var(--fs-regular-text); /* фикс т к во всех версиях единый размер*/
+    line-height: var(--lh-regular-text);
+    font-weight: var(--fw-bold);
+    /* нужно потом посмотреть. Блок стоит по центру правильно,
+    но слова переносятся по другому. Из-за этого в ПП не сходится*/
+}
+
+.title-decor  {
+    background-color: var(--accent-color);
+    color: var(--color-title-text);
+  /*  font-weight: var(--fw-bold);
+  
+   */
+    display: inline;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+    padding-inline: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.content:first-child {
+    margin-top: 40px;
+}
+
+.content:last-child {
+    margin-bottom: 40px;
+}
+.content_title {
+    color: var(--accent-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-regular-text);
+    line-height: var(--lh-regular-text);
+}
+.content_group_cards {
+    display: grid;
+    gap: 20px;
+}
+
+.content_card {
+    display: grid;
+    gap: 10px;
+    font-size: var(--fs-regular-text);
+    line-height: var(--lh-regular-text);
+    
+}
+.content_card_title {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-regular-text);
+    line-height: var(--lh-regular-text);
+}
+.content_card_text {
+    font-weight: var(--fw-regular);
+    color: var(--color-main-text);
+}
+.title-decor_another {
+font-weight: var(--fw-regular);
+}
+
+.text_link {
+    text-decoration: none;
+    text-shadow: 2px 1px 0 var(--accent-color);
+    cursor: pointer; /* возможно потом нужно перенести в фокусное
+    состояние и отсюда убрать*/
+>>>>>>> Stashed changes
 }
