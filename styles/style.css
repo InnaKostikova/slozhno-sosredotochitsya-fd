@@ -69,8 +69,7 @@
     line-height: 83%;
     /*  не забудь откорректировать размеры шрифта  для адаптивности!!! */
     align-self: center;
-<<<<<<< Updated upstream
-=======
+
     text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -143,5 +142,4 @@ font-weight: var(--fw-regular);
     text-shadow: 2px 1px 0 var(--accent-color);
     cursor: pointer; /* возможно потом нужно перенести в фокусное
     состояние и отсюда убрать*/
->>>>>>> Stashed changes
 }
