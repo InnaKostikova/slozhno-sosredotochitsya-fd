@@ -15,7 +15,7 @@
     min-height: 668px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content repeat(3, 1fr);
+    grid-template-rows: min-content 1fr min-content 1fr;
     padding: 10px;
     align-content: space-between;
     /*
@@ -48,14 +48,6 @@
     border-block-end: 1px solid var(--accent-color);
     border-inline-start: 1px solid var(--accent-color);
 }
-
-/*.header__decorated-indicator {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    grid-row: 1;
-}
- */
 
 .header__rec-indicator {
     color: var(--accent-color);
@@ -100,33 +92,24 @@
 
 .slogan {
     color: var(--slogan-color);
-    /* font-family: "IBM Plex mono", monospace, Monaco;
-    перенесла в глобальные стили
-     */
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: var(--fw-bold);
     line-height: 83%;
-    /*  не забудь откорректировать размеры шрифта  для адаптивности!!! */
     align-self: center;
     text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .title {
     align-self: center;
-    font-size: var(--fs-regular-text); /* фикс т к во всех версиях единый размер*/
+    font-size: var(--fs-regular-text);
     line-height: var(--lh-regular-text);
     font-weight: var(--fw-bold);
-    /* нужно потом посмотреть. Блок стоит по центру правильно,
-    но слова переносятся по другому. Из-за этого в ПП не сходится*/
 }
 
-.title-decor  {
+.title-decor {
     background-color: var(--accent-color);
     color: var(--color-title-text);
-  /*  font-weight: var(--fw-bold);
-  
-   */
-    display: inline;
+    /*  font-weight: var(--fw-bold); */
 }
 
 .content {
@@ -144,12 +127,14 @@
 .content:last-child {
     margin-bottom: 40px;
 }
+
 .content_title {
     color: var(--accent-color);
     font-weight: var(--fw-bold);
     font-size: var(--fs-regular-text);
     line-height: var(--lh-regular-text);
 }
+
 .content_group_cards {
     display: grid;
     gap: 20px;
@@ -162,22 +147,26 @@
     line-height: var(--lh-regular-text);
     
 }
+
 .content_card_title {
     font-weight: var(--fw-bold);
     font-size: var(--fs-regular-text);
     line-height: var(--lh-regular-text);
 }
+
 .content_card_text {
     font-weight: var(--fw-regular);
     color: var(--color-main-text);
 }
+
 .title-decor_another {
-font-weight: var(--fw-regular);
+    font-weight: var(--fw-regular);
 }
 
 .text_link {
     text-decoration: none;
     text-shadow: 2px 1px 0 var(--accent-color);
-    cursor: pointer; /* возможно потом нужно перенести в фокусное
-    состояние и отсюда убрать*/
+    cursor: pointer;
+    /* возможно потом нужно перенести в фокусное
+       состояние и отсюда убрать*/
 }
