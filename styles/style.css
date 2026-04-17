@@ -338,9 +338,6 @@
 }
 
 @media (width >= 1024px) {
-   /* .header {
-        grid-template-rows: repeat(3, 1fr);
-    }*/
     
     .header__theme-menu-list {
         flex-direction: row;
@@ -351,14 +348,7 @@
         justify-self: center;
         align-self: start;
     }
-    /*.slogan {
-        align-self: end;
-    }
     
-    .title {
-        align-self: end;
-        margin-bottom: 25px;
-    }*/
     .content {
         grid-template-columns: repeat(3, 1fr);
     }
