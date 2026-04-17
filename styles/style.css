@@ -89,12 +89,14 @@
     justify-self: end;
     align-self: center;
 }
+
 .header__theme-menu-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     
 }
+
 .header__theme-menu-button {
     display: flex;
     justify-content: center;
@@ -110,6 +112,7 @@
     
     
 }
+
 .header__theme-menu-button_active {
     border: 1px solid var(--accent-color);
     pointer-events: none; /* проверить */
@@ -119,8 +122,9 @@
     outline: 1px solid var(--button-color-hover);
     cursor: pointer;
 }
+
 .header__theme-menu-button:focus-visible {
-border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .slogan {
@@ -201,9 +205,11 @@ border-bottom: 1px solid var(--accent-color);
     text-shadow: 2px 1px 0 var(--accent-color);
     
 }
+
 .text_link:hover {
     border-bottom: 1px solid var(--color-main-text);
 }
+
 .text_link:focus-visible {
     outline: 1px solid var(--color-main-text);
 }
@@ -215,6 +221,7 @@ border-bottom: 1px solid var(--accent-color);
     
     
 }
+
 .gallery img {
     width: 100%;
     height: 100%;
@@ -225,6 +232,7 @@ border-bottom: 1px solid var(--accent-color);
 .picture {
     gap: 10px;
 }
+
 .footer {
     height: 100vh;
     min-height: 668px;
@@ -234,7 +242,7 @@ border-bottom: 1px solid var(--accent-color);
 }
 
 .footer_slogan {
-font-size: var(--fs-slogan-text);
+    font-size: var(--fs-slogan-text);
     font-weight: var(--fw-bold);
     line-height: 83%;
     color: var(--slogan-color);
