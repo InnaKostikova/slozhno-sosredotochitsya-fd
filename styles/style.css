@@ -80,8 +80,11 @@
 }
 
 .header__theme-menu-button {
-    display: flex;
-    justify-content: center;
+    /* display: flex; === было в коде ===
+    justify-content: center; === было в коде ===
+    align-items: center; === при добавлении этого св-ва, сетка сломалась хуже изначальной.
+    Пообщавшись с gpt, он мне объяснил, что из-за размера интерлиньяжа невозможно отцентрировать
+    ровно по вертикали и нужно использовать "костыли"*/
     width: 70px;
     height: 26px;
     background-color: transparent;
@@ -91,6 +94,7 @@
     outline: none;
     font-size: var(--fs-regular-text);
     line-height: 18px;
+    padding: 1px 13px 5px 13px; /* пока решила выровнять таким способом, хотя флекс мне казался изящнее*/
 }
 
 .header__theme-menu-button_active {
@@ -109,7 +113,7 @@
 
 .slogan {
     color: var(--slogan-color);
-    font-size: var(--fs-slogan-mobile);
+    font-size: var(--fs-slogan);
     font-weight: var(--fw-bold);
     line-height: 83%;
     align-self: center;
@@ -126,6 +130,17 @@
 .title-decor {
     background-color: var(--accent-color);
     color: var(--color-title-text);
+    /* Я изначально пробовала задать повторяющиеся размеры в этом
+    селекторе, но они не корректно у меня наследовались.
+    Возможно стоило прописать везде inherit, но в тот момент, я сочла,
+    что-так писать строчку, что задавать размер. Но задать размер я посчитала
+    надежнее.
+    На будущее я учту Ваш комментарий, и буду применять это к действию.
+    Но сейчас, если это не критически важный момент, можем оставить как есть?!
+    Я честно попробовала поправить, но все начало ломаться.
+    Я боюсь сейчас уже замыленным взглядом пропустить где-то лишние изменения
+    и сделать еще хуже.
+     */
 }
 
 .content {
@@ -224,7 +239,7 @@
 }
 
 .footer_slogan {
-    font-size: var(--fs-slogan-mobile);
+    font-size: var(--fs-slogan);
     font-weight: var(--fw-bold);
     line-height: 83%;
     color: var(--slogan-color);
@@ -261,7 +276,7 @@
     .slogan {
         grid-column: 1/3;
         grid-row: 2;
-        font-size: var(--fs-slogan-tablet_desktop);
+        font-size: var(--fs-slogan);
         margin-left: -20px;
     }
     
@@ -333,7 +348,7 @@
     }
     
     .footer_slogan {
-        font-size: var(--fs-slogan-tablet_desktop);
+        font-size: var(--fs-slogan);
     }
 }
 
